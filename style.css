@@ -9,6 +9,16 @@ body {
     background-color: black;
     color: white;
 }
+section{
+    margin:40px 0px;
+    min-height: 700px;
+
+}
+section h1{
+    text-align: center;
+    font-size: 90px;
+    margin: 20px;
+}
 
 header {
     display: flex;
@@ -195,6 +205,80 @@ nav ul li {
     font-size: 30px;
 }
 
+.hard-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.hard-skills h2{
+    color: #00ffee;
+    margin: 30px 0px;
+    font-size: 30px;
+}
+.hard-skills ul li{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(32, 32, 32);
+    padding: 30px;
+    margin: 0px;
+    border-radius: 30px;
+    min-width: 464px;
+    text-align: center;
+    font-size: 20px;
+
+
+
+}
+.hard-skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
+    
+
+}
+
+.soft-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.soft-skills h2{
+    color: #00ffee;
+    margin: 20px 0px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.soft-skills ul li{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(32, 32, 32);
+    padding: 30px;
+    margin: 0px;
+    border-radius: 30px;
+    min-width: 464px;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+.soft-skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
+    
+
+}
+
+
+
 
 
 
@@ -202,7 +286,12 @@ nav ul li {
     .menu-icon {
         display: block; 
     }
-    
+    section{
+        min-height: 550px;
+    }
+    section h1{
+        font-size: 60px;
+    }
     nav ul {
         display: none;
         flex-direction: column;
@@ -257,5 +346,44 @@ nav ul li {
         
         padding: 5px;
         font-size: 20px;
+    }
+    .hard-skills ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1rem;
+        margin-top: 30px;
+        
+    
+    }
+    
+    .soft-skills ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1rem;
+        margin-top: 30px;
+        
+    
+    }
+    .soft-skills ul li{
+        min-width: 45vw;
+        padding: 20px;
+        font-size: 3vw;
+    
+    
+    }
+    .hard-skills ul li{
+        min-width: 45vw;
+        padding: 20px;
+        font-size: 3vw;
+
+    
+    
+    }
+    .soft-skills h2{
+        margin-top: 56px;
+    
+    
     }
 }
