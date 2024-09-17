@@ -415,6 +415,101 @@ nav ul li {
 }
 
 
+.short-courses-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+
+.short-courses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.short-courses-list li {
+    background-color: #393939;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.short-courses-list h3 {
+    font-size: 22px;
+    color: #00ffee;
+}
+
+.short-courses-list p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+}
+.degrees-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+
+.degrees-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.degrees-list li {
+    background-color: #3a3a3a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.degrees-list h3 {
+    font-size: 22px;
+    color: #00ffee;
+}
+
+.degrees-list p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+}
+
+
+.footer {
+    background-color: #303030;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
 
 
 
@@ -436,7 +531,7 @@ nav ul li {
         min-height: 550px;
     }
     section h1{
-        font-size: 60px;
+        font-size: 45px;
     }
     nav ul {
         display: none;
@@ -499,8 +594,6 @@ nav ul li {
         align-items: center;
         gap: 1rem;
         margin-top: 30px;
-        
-    
     }
     
     .soft-skills ul {
@@ -559,6 +652,36 @@ nav ul li {
     }
 
     .awards-list p, .certifications-list p, .trainings-list p {
+        font-size: 14px;
+    }
+    .degrees-section {
+        padding: 30px 10px;
+    }
+
+    .degrees-list li {
+        padding: 15px;
+    }
+
+    .degrees-list h3 {
+        font-size: 20px;
+    }
+
+    .degrees-list p {
+        font-size: 14px;
+    }
+    .short-courses-section {
+        padding: 30px 10px;
+    }
+
+    .short-courses-list li {
+        padding: 15px;
+    }
+
+    .short-courses-list h3 {
+        font-size: 20px;
+    }
+
+    .short-courses-list p {
         font-size: 14px;
     }
 }
