@@ -86,6 +86,10 @@ nav ul li a {
     color: white;
     margin: 7px 0px;
 }
+nav ul li a:hover {
+    
+    text-decoration: underline;
+}
 
 nav ul li a i {
     font-size: 16px;
@@ -167,6 +171,10 @@ nav ul li {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+}
+.profile-image img:hover {
+    transform: scale(1.2);
 }
 
 .profile-details h1 {
@@ -193,6 +201,10 @@ nav ul li {
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
+}
+.profile-buttons a:hover {
+    background-color: rgb(57, 57, 57);
+    color: white;
 }
 
 .social-links a{
@@ -228,6 +240,8 @@ nav ul li {
     min-width: 464px;
     text-align: center;
     font-size: 20px;
+    transition: 0.3s ease-in-out;
+
 
 
 
@@ -265,9 +279,20 @@ nav ul li {
     min-width: 464px;
     text-align: center;
     font-size: 20px;
+    transition: 0.3s ease-in-out;
 
 
 }
+.hard-skills ul li:hover {
+    background-color: #00ffee;
+    color: black;
+    transform:scale(1.05);
+} 
+.soft-skills ul li:hover {
+    background-color: #00ffee;
+    color: black;
+    transform:scale(1.05);
+} 
 .soft-skills ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -348,11 +373,7 @@ nav ul li {
     text-align: center;
 }
 
-.video-section h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: white;
-}
+
 
 .video-container {
     position: relative;
@@ -377,11 +398,7 @@ nav ul li {
     text-align: center;
 }
 
-.achievements-section h1 {
-    font-size: 50px;
-    margin-bottom: 40px;
-    color: white;
-}
+
 
 .achievements-container, .certifications-container, .trainings-container {
     margin-bottom: 40px;
@@ -401,6 +418,8 @@ nav ul li {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+
 }
 
 .awards-list h3, .certifications-list h3, .trainings-list h3 {
@@ -413,6 +432,8 @@ nav ul li {
     color: #ffffff;
     margin-top: 5px;
 }
+
+
 
 
 .short-courses-section {
@@ -450,9 +471,7 @@ nav ul li {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-   
-}
+
 .degrees-section {
     padding: 50px 20px;
     text-align: center;
@@ -487,10 +506,7 @@ nav ul li {
     margin-top: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-   
-}
+
 
 
 .footer {
