@@ -10,31 +10,26 @@
 <body>
     <header>
         <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#video">Video</a>
-            <a href="#social-media">Social Media</a>
-            <a href="#Projects">Projects</a>
-            
-            <div class="dropdown">
-                <a href="#certif">Certificates <i class='bx bxs-down-arrow'></i></a>
-                <div class="dropdown-content">
-                    <a href="#certifcations">Certifications</a>
-                    <a href="#awards">Awards</a>
-                    <a href="#training">Training</a>
-
-
-                </div>
-              </div>
-            <a href="#Projects">Projects</a>
-            <a href="#Projects">Degree</a>
-            <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-
-
-
-
+            <a href="#home" class="logo">Muhammad Haris <span>Nadeem</span></a>
+            <div class="menu-icon" id="menu-icon">
+                <i class='bx bx-menu'></i> 
+            </div>
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="#certif">Certificates <i class='bx bxs-down-arrow'></i></a>
+                    <div class="dropdown-content">
+                        <a href="#certifcations">Certifications</a>
+                        <a href="#awards">Awards</a>
+                        <a href="#training">Training</a>
+                    </div>
+                </li>
+                <li><a href="#degree">Degree</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -42,26 +37,36 @@
     <section class="home" id="home">
         <div class="block">
             Home
-
         </div>
     </section>
     
-
     <section class="skills" id="skills">
         <div class="block">
-            skill
-
+            Skills
         </div>
     </section>
-
-
 
     <section class="video" id="video">
         <div class="block">
-            video
-
+            Video
         </div>
     </section>
-    
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const menu = document.getElementById('menu');
+        let menuOpen = false;
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuOpen = !menuOpen;
+
+            if(menuOpen) {
+                menuIcon.innerHTML = `<i class='bx bx-x'></i>`;
+            } else {
+                menuIcon.innerHTML = `<i class='bx bx-menu'></i>`;
+            }
+        });
+    </script>
 </body>
 </html>
