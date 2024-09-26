@@ -12,3 +12,4 @@ const menuIcon = document.getElementById('menu-icon');
                 menuIcon.innerHTML = `<i class='bx bx-menu'></i>`;
             }
         });
+        
